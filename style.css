@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(166, 117, 212);
+    justify-content: space-around;
+}
+.nav_links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+h1{
+    color:white
+
+}
+
+
+
+.nav_links li a{
+    color: white;
+    text-decoration:none;
+    transition: 0.5s;
+}
+
+.nav_links li a:hover{
+    box-shadow: 2px 2px 2px white;
+
+}
+
+.toggle-menu{
+    display: none;
+}
+
+.hamburguesa{
+    display: none;
+}
+
+.submenu {
+
+
+
+}
+
+.submenu1{
+    list-style: none;
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background-color: rgb(253, 127, 247);
+    border-radius: 10px;
+     
+}
+
+.submenu:hover .submenu1{
+    display: block;
+
+}
+
+.seccion2{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(195, 152, 235);
+}
+
+.seccion3{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(153, 90, 212);
+}
+
+.login{
+    width: 60%;
+    height: 300px;
+    background-color: rgb(230, 218, 241);
+    display: block;
+    text-align: center;
+}
+.formulogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:8px;
+}
+.portada{
+    background-color: rgb(252, 186, 252);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 1100px;
+}
+
+.registro{
+    width: 60%;
+    height: 600px;
+    background-color: rgb(171, 92, 245);
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],input[type="email"],input[type="password"]{
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    
+    }
+
+button{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(124, 204, 137);
+}
+
+input[type="text"] {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.registro{
+    width: 60%;
+    height: 800px;
+    background-color: rgb(217, 188, 245);
+    display: block;
+    text-align: center;
+}
+.formuregis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:8px;
+}
+
+
+
+
+@media (max-width:768px){
+    .nav_links{
+        display: none;
+    }
+    .toggle-menu{
+        display: flex;
+    }
+    .toggle-menu:checked ~ .nav_links{
+        display: flex;
+    }
+
+    .nav_links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 10px;  
+        width: 200px;
+        height: 205px;      
+        background-color: rgb(214, 46, 200);
+
+    }
+}

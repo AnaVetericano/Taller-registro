@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <label for="toggle" class="hamburguesa"></label>
+        <input type="checkbox" id="toggle" class="toggle-menu">
+        <h1>Menu</h1>
+        <ul class="nav_links">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="../../servicios.html">Servicios</a>
+            </li>
+            <li>
+                <a href="">Nosotros</a>  
+            </li>
+            <li>
+                <a href="#contacto">Contacto</a>  
+            </li>
+
+            <li class="submenu">
+                <a href="">Menu</a> 
+                <ul class="submenu1">            
+                    <li>
+                    <a href="">Submenu 1</a>
+                    </li>    
+                    <li>
+                    <a href="">Submenu 2</a>
+                    </li>
+                    <li>
+                    <a href="#submenu3">Submenu 3</a>
+                    </li>         
+
+                </ul>
+            </li>                
+        </ul >
+    </nav>
+    <div class="portada">
+        <div class="login"> 
+            <h1>Login</h1>
+            <form class="formulogin">
+                <label>Email</label>
+                <input type="email" placeholder="Escriba su correo" required>
+                <label>Passoword</label>
+                <input type="password" placeholder="Escriba su contraseña" required>
+                <button type="submit">Aceptar</button>
+            </form>
+        </div>
+        <div class="registro"> 
+            <h1>Register</h1>
+            <form class="formuregis">
+            <label for="nombre">Nombres</label>
+            <input type="text" id="nombre" placeholder="Escriba sus nombres" required>
+            <label for="ape">Apellidos</label>
+            <input id="ape" name="" type="text" placeholder="Escriba sus Apellidos" required>
+            <label>Dirección</label>
+            <input type="text" placeholder="Escriba su Dirección" required>
+            <label>Telefono</label>
+            <input type="text" placeholder="Escriba su Telefono" required>
+            <label>Genero</label>
+            <select>
+                <option value=""disable selected>Seleccione.......</option>
+                <option value="F">Femenino</option>
+                <option value="M">Masculino
+                <option value="O">Otros</option>               
+            </select>
+            <label>Pasatiempos</label>
+            <div class="pasat">
+                <label>Deportes</label>
+                <input type="checkbox">
+                <label>Musica</label>
+                <input type="checkbox">
+            </div>
+            <label>Comentarios</label>
+            <textarea class="coment"placeholder="Escriba su comentario max.200 caracteres" rows="4" cols="20" ></textarea>            
+            <label>Email</label>
+            <input type="email" placeholder="Escriba su correo" required>
+            <label>Password</label>
+            <input type="password" placeholder="Escriba su contraseña" required>
+             
+            <label>Tipo Transporte</label>
+            <div class="tp">
+            <input type="radio" value="Carro" name="Transporte">Carro</input>
+            <input type="radio" value="Bus"     name="Transporte">Bus</input>
+            <input type="radio" value="Bicicleta"     name="Transporte">Bicicleta</input>
+            </div>
+
+            <button type="submit">Siguiente</button>   
+        </form>
+
+        </div>
+    </div>
+    <section class="seccion2" id="Contacto">
+        <h1>Contacto</h1>
+
+    </section>
+
+    <section class="seccion3" id="submenu3">
+        <h1>Submenu 3</h1>
+
+    </section>
+
+
+    
+
+
+
+</body>
+
+</html>
